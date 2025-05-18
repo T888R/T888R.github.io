@@ -1,5 +1,5 @@
 import p5 from "p5";
-import { vertexShader, fragmentShader } from "./shaders";
+import { vertexShader, fragmentShader } from "./shaders.ts";
 
 console.log("Shaders loaded successfully");
 
