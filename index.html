@@ -1,12 +1,45 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>p5.js Audio Reactive Shader</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5.js + TypeScript + GLSL</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+
+      #sketch-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 14px;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
-    <script src="sketch.js"></script>
+    <div id="info">
+      <div>p5.js + TypeScript + GLSL Template</div>
+      <div>Move mouse to interact with shader</div>
+    </div>
+    <div id="sketch-container"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
