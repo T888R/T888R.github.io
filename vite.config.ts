@@ -38,5 +38,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
     assetsDir: "assets",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          p5: ["p5"],
+        },
+      },
+    },
   },
+  // Set base path for GitHub Pages if your repo name is not your username
+  // base: '/your-repo-name/'
 });
