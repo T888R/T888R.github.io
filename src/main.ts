@@ -81,4 +81,5 @@ const sketch = (p: p5) => {
 };
 
 // Initialize p5
+// @ts-ignore: Added this to supress error
 new p5(sketch, "sketch-container");
