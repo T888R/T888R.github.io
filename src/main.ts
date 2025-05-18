@@ -5,7 +5,7 @@ console.log("Shaders loaded successfully");
 
 class ShaderSketch {
   private p5Instance: p5;
-  private shader: p5.Shader;
+  private shader!: p5.Shader;
   private startTime: number;
 
   constructor(p5Instance: p5) {
@@ -81,5 +81,5 @@ const sketch = (p: p5) => {
 };
 
 // Initialize p5
-// @ts-ignore: Added this to supress error
+// @ts-ignore: Added this to supress error in HTML assignment
 new p5(sketch, "sketch-container");

@@ -46,6 +46,4 @@ export default defineConfig({
       },
     },
   },
-  // Set base path for GitHub Pages if your repo name is not your username
-  // base: '/your-repo-name/'
 });
